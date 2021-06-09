@@ -20,7 +20,9 @@ Steps:
     - virtualenv <virtualenv_name>
     - source <virtualenv_name>/bin/activate
   2. Install requirements.txt (command: pip install -r requirements.txt)
-  3. Run app in Streamlit (command: streamlit run app.py)
+  4. change for your GCP service account credentials key and region in app.y
+  5. change <project_id> and <model_name> in model_path at utils.py
+  6. Run app in Streamlit (command: streamlit run app.py)
 - Deploy App Into Google Cloud Run
   1. Create a dockerfile
   2. Build image using docker (command: docker build -t gcr.io/PROJECT-ID/APP-NAME:latest .)
